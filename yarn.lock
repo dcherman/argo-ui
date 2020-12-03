@@ -890,6 +890,13 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
+"@babel/runtime@^7.5.5", "@babel/runtime@^7.8.7":
+  version "7.12.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
+  integrity sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.1.0", "@babel/template@^7.4.0", "@babel/template@^7.4.4":
   version "7.4.4"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.4.4.tgz#f4b88d1225689a08f5bc3a17483545be9e4ed237"
@@ -3814,6 +3821,11 @@ csstype@^2.5.7:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.5.tgz#1cd1dff742ebf4d7c991470ae71e12bb6751e034"
   integrity sha512-JsTaiksRsel5n7XwqPAfB0l3TFKdpjW/kgAELf9vrb5adGA7UCPLajKK5s3nFrcFm3Rkyp/Qkgl73ENc1UY3cA==
 
+csstype@^3.0.2:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.5.tgz#7fdec6a28a67ae18647c51668a9ff95bb2fa7bb8"
+  integrity sha512-uVDi8LpBUKQj6sdxNaTetL6FpeCqTjOvAQuQUa/qAqq8oOd4ivkbhgnqayl0dnPal8Tb/yB1tF+gOvCBiicaiQ==
+
 cst@^0.4.3:
   version "0.4.10"
   resolved "https://registry.yarnpkg.com/cst/-/cst-0.4.10.tgz#9c05c825290a762f0a85c0aabb8c0fe035ae8516"
@@ -4080,12 +4092,13 @@ dom-converter@~0.1:
   dependencies:
     utila "~0.3"
 
-dom-helpers@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/dom-helpers/-/dom-helpers-3.4.0.tgz#e9b369700f959f62ecde5a6babde4bccd9169af8"
-  integrity sha512-LnuPJ+dwqKDIyotW1VzmOZ5TONUN7CwkCR5hrgawTUbkBGYdeoNLZo6nNfGkCrjtE1nXXaj7iMMpDa8/d9WoIA==
+dom-helpers@^5.0.1:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/dom-helpers/-/dom-helpers-5.2.0.tgz#57fd054c5f8f34c52a3eeffdb7e7e93cd357d95b"
+  integrity sha512-Ru5o9+V8CpunKnz5LGgWXkmrH/20cGKwcHwS4m73zIvs54CN9epEmT/HLqFJW3kXpakAFkEdzgy1hzlJe3E4OQ==
   dependencies:
-    "@babel/runtime" "^7.1.2"
+    "@babel/runtime" "^7.8.7"
+    csstype "^3.0.2"
 
 dom-scroll-into-view@1.0.1:
   version "1.0.1"
@@ -8551,25 +8564,25 @@ react-textarea-autosize@^7.1.0:
     "@babel/runtime" "^7.1.2"
     prop-types "^15.6.0"
 
-react-toastify@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/react-toastify/-/react-toastify-5.0.1.tgz#ddc5f42ae1f5b2be25270d67790c9e6cd5dcce24"
-  integrity sha512-O492qeG+xNZfG5N/LW0hG9YIteU8EPOzSkU8RviBhCd40kcnnq87QIklbqCkygm/BiwlvSdLFCKIpFPdrvBA7Q==
+react-toastify@^5.5.0:
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/react-toastify/-/react-toastify-5.5.0.tgz#f55de44f6b5e3ce3b13b69e5bb4427f2c9404822"
+  integrity sha512-jsVme7jALIFGRyQsri/g4YTsRuaaGI70T6/ikjwZMB4mwTZaCWqj5NqxhGrRStKlJc5npXKKvKeqTiRGQl78LQ==
   dependencies:
     "@babel/runtime" "^7.4.2"
     classnames "^2.2.6"
     prop-types "^15.7.2"
-    react-transition-group "^2.6.1"
+    react-transition-group "^4"
 
-react-transition-group@^2.6.1:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-2.9.0.tgz#df9cdb025796211151a436c69a8f3b97b5b07c8d"
-  integrity sha512-+HzNTCHpeQyl4MJ/bdE0u6XRMe9+XG/+aL4mCxVN4DnPBQ0/5bfHWPDuOZUzYdMj94daZaZdCCc1Dzt9R/xSSg==
+react-transition-group@^4:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.1.tgz#63868f9325a38ea5ee9535d828327f85773345c9"
+  integrity sha512-Djqr7OQ2aPUiYurhPalTrVy9ddmFCCzwhqQmtN+J3+3DzLO209Fdr70QrN8Z3DsglWql6iY1lDWAfpFiBtuKGw==
   dependencies:
-    dom-helpers "^3.4.0"
+    "@babel/runtime" "^7.5.5"
+    dom-helpers "^5.0.1"
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
-    react-lifecycles-compat "^3.0.4"
 
 react@^16.8.3:
   version "16.8.3"
@@ -8793,6 +8806,11 @@ regenerator-runtime@^0.13.2:
   version "0.13.2"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.2.tgz#32e59c9a6fb9b1a4aff09b4930ca2d4477343447"
   integrity sha512-S/TQAZJO+D3m9xeN1WTI8dLKBBiRgXBlTJvbWjCThHWZj9EvHK70Ff50/tYj2J/fvBY6JtFVwRuazHN2E7M9BA==
+
+regenerator-runtime@^0.13.4:
+  version "0.13.7"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.7.tgz#cac2dacc8a1ea675feaabaeb8ae833898ae46f55"
+  integrity sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==
 
 regenerator-transform@^0.14.0:
   version "0.14.0"
