@@ -24,7 +24,7 @@
         "deep-equal": "^1.0.1",
         "foundation-sites": "^6.4.3",
         "history": "^4.7.2",
-        "moment": "^2.20.1",
+        "moment": "^2.29.1",
         "prop-types": "^15.6.0",
         "react": "^16.8.3",
         "react-autocomplete": "^1.8.1",
