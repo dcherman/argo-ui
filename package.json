@@ -22,7 +22,7 @@
         "classnames": "^2.2.5",
         "dagre": "^0.8.2",
         "deep-equal": "^1.0.1",
-        "foundation-sites": "^6.4.3",
+        "foundation-sites": "^6.6.3",
         "history": "^4.7.2",
         "moment": "^2.20.1",
         "prop-types": "^15.6.0",
