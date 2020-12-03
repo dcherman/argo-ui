@@ -14,7 +14,7 @@
         "start": "start-storybook -p 6006"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "^5.8.1",
+        "@fortawesome/fontawesome-free": "^5.15.1",
         "@tippy.js/react": "^2.1.2",
         "@types/react-autocomplete": "^1.8.5",
         "@types/react-form": "^2.16.1",
