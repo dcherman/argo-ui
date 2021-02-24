@@ -1,8 +1,7 @@
 import * as classNames from 'classnames';
-import * as PropTypes from 'prop-types';
 import * as React from 'react';
+import {RouteComponentProps, withRouter} from 'react-router-dom';
 
-import { AppContext } from '../../context';
 import {Tooltip} from '../tooltip/tooltip';
 
 require('./nav-bar.scss');
@@ -16,8 +15,9 @@ export function isActiveRoute(locationPath: string, path: string) {
     return locationPath === path || locationPath.startsWith(`${path}/`);
 }
 
-export const NavBar: React.FunctionComponent<NavBarProps> = (props: NavBarProps, context: AppContext) => {
-    const locationPath = context.router.route.location.pathname;
+export const NavBar = withRouter<RouteComponentProps<{}> & NavBarProps>((props) => {
+    const locationPath = props.location.pathname;
+
     return (
         <div className={classNames('nav-bar', {
             'nav-bar--compact': (props.items || []).length >= 10,
@@ -28,7 +28,7 @@ export const NavBar: React.FunctionComponent<NavBarProps> = (props: NavBarProps,
                 {(props.items || []).map((item) => (
                     <Tooltip content={item.title} placement='right' arrow={true} key={item.path + item.title}>
                         <div className={classNames('nav-bar__item', { active: isActiveRoute(locationPath, item.path) })}
-                            onClick={() => context.router.history.push(item.path)}>
+                            onClick={() => props.history.push(item.path)}>
                             <i className={item.iconClassName}/>
                         </div>
                     </Tooltip>
@@ -36,8 +36,4 @@ export const NavBar: React.FunctionComponent<NavBarProps> = (props: NavBarProps,
             </div>
         </div>
     );
-};
-
-NavBar.contextTypes = {
-    router: PropTypes.object,
-};
+});
