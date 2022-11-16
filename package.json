@@ -38,7 +38,7 @@
         "superagent-promise": "^1.1.0",
         "ts-loader": "^6.0.4",
         "typescript": "^2.8.3",
-        "webpack-cli": "^3.3.5",
+        "webpack-cli": "^3.3.12",
         "ws": "^4.0.0",
         "xterm": "2.4.0",
         "yamljs": "^0.3.0"
